@@ -4,25 +4,25 @@ services:
   movie:
     image: afridi771/movie:v1
     ports:
-      - 8005:80
+      - "8005:80"
     deploy:
       replicas: 4
   d2h:
     image: afridi771/d2h:v1
     ports:
-      - 8006:80
+      - "8006:80"
     deploy:
       replicas: 4
   recharge:
     image: afridi771/recharge:v1
     ports:
-      - 8007:80
+      - "8007:80"
     deploy:
       replicas: 4
   eletric:
     image: afridi771/eletric:v1
     ports:
-      - 8008:80
+      - "8008:80"
     deploy:
       replicas: 4
 
