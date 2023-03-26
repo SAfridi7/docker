@@ -1,0 +1,36 @@
+---
+version: "3"
+services:
+  movie:
+    image: afridi771/movie:v1
+    ports:
+      - 8000:80
+    volumes:
+      - volume1
+    deploy:
+      replicas: 4
+  d2h:
+    image: afridi771/d2h:v1
+    volumes:
+      - volume2
+    ports:
+      - 8001:80
+    deploy:
+      replicas: 4
+  recharge:
+    image: afridi771/recharge:v1
+    volumes:
+      - volume3
+    ports:
+      - 8002:80
+    deploy:
+      replicas: 4
+  eletric:
+    image: afridi771/eletric:v1
+    volumes:
+      - volume4
+    ports:
+      - 8003:80
+    deploy:
+      replicas: 4
+
